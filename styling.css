@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    background: #ececec;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    width: 900px;
+    height: 600px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image-one{
+    background-image: url("assets/images/pexels-pikx-by-panther-1547248.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+.side-image-two{
+    background-image: url("assets/images/pexels-anush-gorak-1229356.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color: #fff;
+    font-size: 18px;
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header{
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+    border-radius: 8px;
+
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e4e4e4;
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+    color: #616161;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #fd3d0d;
+}
+.input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #fd3d0d;
+}
+.logout-section{
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logout-wrapper{
+    height: 200px;
+    width: 340px;
+    background-color: #ececec;
+    border-radius: 10px;
+    padding: 0 10px 10px 0;
+}
+.logout-wrapper header{
+    margin-top: 30px;
+    margin-left: 130px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.logout-wrapper p{
+    margin-left: 10px;
+}
+.line{
+    position: relative;
+    background-color: #d4d4d4;
+    margin: 30px 0;
+    margin-left: 10px;
+    height: 1px;
+    width: 95%;
+}
+button{
+    border: none;
+    outline: none;
+    height: 45px;
+    width: 100%;
+    background: #000000;
+    border-radius: 10px;
+    transition: .4s;
+    color: white;
+}
+button:hover{
+    background: #fd3d0d;
+    color: #fff;
+}
+.none{
+    display: none;
+}
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #fd3d0d;
+}
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    img{
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 47%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+}
