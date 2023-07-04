@@ -35,7 +35,7 @@ signUpButton.addEventListener("click", (e) => {
         var errorCode = error.code;
         var errorMessage = error.message;
         console.log("error code", errorCode);
-        console.log("error Message", errorMessage);
+        console.log("error message", errorMessage);
         alert(errorMessage);
     });
 });
